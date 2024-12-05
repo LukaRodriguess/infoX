@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="os" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2ceeb1c-c8e1-4933-9689-47eac5507b07">
+	<property name="ireport.zoom" value="1.4641000000000015"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="os" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from tbos where os = $P{os}]]>
+	</queryString>
+	<field name="os" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_os" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="situacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="equipamento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="defeito" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="serviço" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tecnico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idcli" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="130" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="0" width="80" height="96" uuid="2f5bea41-28cd-4a67-b0cc-d06773ddc1b4"/>
+				<imageExpression><![CDATA["C:\\Users\\PCGamer R5X GTX1660S\\Downloads\\Logo.png"]]></imageExpression>
+			</image>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="334" y="0" width="221" height="20" uuid="9e063456-f7d3-475c-94c5-db2001e99b6f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="0" width="40" height="25" forecolor="#006699" uuid="442aa756-89c1-45c8-b79c-afbf9a29928c"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OS:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="132" y="0" width="75" height="25" uuid="2679e224-6ea7-4d77-8229-f5b8f06e80f6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{os}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="25" width="100" height="20" uuid="80cfc915-32cd-4762-8b50-ddc2a5022a7e"/>
+				<textFieldExpression><![CDATA[$F{tecnico}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="406" y="25" width="49" height="20" uuid="82d13eb7-fdeb-4a5b-9ec9-82405f72f3e1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tecnico:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="45" width="100" height="20" uuid="fef6a6b0-58f0-47f2-97da-20da40ae3ba0"/>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="419" y="45" width="36" height="20" uuid="cbffb735-1b9d-4e09-8003-436f28bb0278"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="184" y="45" width="100" height="20" uuid="48dc928f-6d71-40c5-87db-f8ea83c7e204"/>
+				<textFieldExpression><![CDATA[$F{idcli}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="45" width="94" height="20" uuid="cff79355-0097-4e23-88a3-37d61bc6410f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código do cliente:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="116" width="555" height="1" uuid="cae57856-a51f-49ba-93ba-e6121df26704"/>
+			</line>
+			<textField>
+				<reportElement x="132" y="76" width="73" height="20" uuid="a68218a7-9bed-4540-82ff-25db292b183c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="108" y="76" width="22" height="20" uuid="791c6cba-51b0-4d6b-9810-5a99f765a7d0"/>
+				<imageExpression><![CDATA["C:\\Users\\PCGamer R5X GTX1660S\\Downloads\\check.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="79" height="20" uuid="cd11e0b1-90fd-448c-b940-a627befa1e10"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="0" width="126" height="20" uuid="2efc8ef6-b53a-4109-92f4-f38cdb296f88"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Situação]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="0" width="110" height="20" uuid="348d3649-1275-4ef9-999f-78f33ecc90b1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Defeito]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="0" width="123" height="20" uuid="ee01b7da-3ecf-4b78-8e96-28d1259b08d3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Serviço]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="0" width="117" height="20" uuid="b8161cc0-c91f-4f49-bbd3-1ec8e9239635"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Equipamento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="79" height="20" uuid="62016763-d7ce-4fbb-871e-3d9fa4dea543"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data_os}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="126" height="20" uuid="80510005-96b0-46e3-aa54-21cab7e5dbfc"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{situacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="322" y="0" width="110" height="20" uuid="e8b03eea-f211-4a66-b187-e575981211a6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{defeito}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="0" width="123" height="20" uuid="0789c8a2-e5d1-4c30-9ce7-734611f5d25c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{serviço}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="0" width="117" height="20" uuid="ff22ed55-8493-4c5c-8dd3-e2c51e272a10"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{equipamento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
