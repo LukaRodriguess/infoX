@@ -34,6 +34,7 @@ Ter um banco de dados local baseado no MySQL WorkBench 8 [Aqui](https://dev.mysq
 1. **Na Instalação do banco de dados MySQL quando estiver em Accounts and Roles**
    
    -Escolher a senha Admin@0099
+   
    -Na aba Query SQL, copie e cole o código abaixo e execute.
    ```sql
    create table tbusuarios(iduser int primary key,usuario varchar(15) not null,fone varchar(15),login varchar(15) not null unique,senha varchar(250) not null,perfil varchar(20) not null);
