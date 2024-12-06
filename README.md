@@ -33,20 +33,9 @@ XAMPP que pode ser obtido no link indicado.[download xampp](https://sourceforge.
 
 ### Configuração do Banco de Dados:
 
-1. **Importação do Dump**:
-   - Na pasta do projeto no GitHub, você encontrará a pasta **Dump** contendo um arquivo `.sql` para a criação do banco de dados.
-   - Abra o **MySQL Workbench** (ou qualquer outro cliente MySQL de sua preferência) e conecte-se ao seu banco de dados.
-   - Crie um banco de dados chamado `dbinfox`:
-     ```sql
-     CREATE DATABASE dbinfox;
-     USE dbinfox;
-     ```
-
-2. **Importação do arquivo Dump**:
-   - No **MySQL Workbench**, vá até o menu **File** e selecione **Open SQL Script**.
-   - Selecione o arquivo `.sql` da pasta **Dump** que está no repositório.
-   - Execute o script para criar as tabelas e inserir os dados necessários.
-
+1. **Na Instalação do banco de dados MySQL quando estiver em Accounts and Roles**:
+   -Escolher a senha Admin@0099
+   
 ---
 
 ### Instalação do Aplicativo:
