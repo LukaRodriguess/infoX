@@ -30,6 +30,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         initComponents();
         conexao = ModuloConexao.conector();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
