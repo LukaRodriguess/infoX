@@ -33,7 +33,8 @@ XAMPP que pode ser obtido no link indicado.[download xampp](https://sourceforge.
 
 ### Configuração do Banco de Dados:
 
-1. **Na Instalação do banco de dados MySQL quando estiver em Accounts and Roles**:
+1. **Na Instalação do banco de dados MySQL quando estiver em Accounts and Roles**
+   
    -Escolher a senha Admin@0099
    
 ---
