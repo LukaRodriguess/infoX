@@ -29,8 +29,6 @@ TJava versão 8 instalado (só funciona corretamente nesta versão do Java).[dow
 
 Ter um banco de dados local baseado no MySQL 8 [Aqui](https://dev.mysql.com/downloads/mysql/8.0.html)
 
-XAMPP que pode ser obtido no link indicado.[download xampp](https://sourceforge.net/projects/xampp/)
-
 ### Configuração do Banco de Dados:
 
 1. **Na Instalação do banco de dados MySQL quando estiver em Accounts and Roles**
