@@ -25,7 +25,7 @@ O **Sistema OS** é uma aplicação desktop destinada à gestão de ordens de se
 ## Instalação
 
 ### Pré-requisitos:
-TJava versão 8 instalado (só funciona corretamente nesta versão do Java).[download Java 8](https://www.java.com/en/download/)
+Java versão 8 instalado (só funciona corretamente nesta versão do Java).[download Java 8](https://www.java.com/en/download/)
 
 Ter um banco de dados local baseado no MySQL WorkBench 8 [Aqui](https://dev.mysql.com/downloads/mysql/8.0.html)
 
@@ -34,7 +34,9 @@ Ter um banco de dados local baseado no MySQL WorkBench 8 [Aqui](https://dev.mysq
 1. **Na Instalação do banco de dados MySQL quando estiver em Accounts and Roles**
    
    -Escolher a senha Admin@0099
-   
+    
+   -Criar um Schema(Banco de dados) com o nome dbinfox
+
    -Na aba Query SQL, copie e cole o código abaixo e execute.
    ```sql
    create table tbusuarios(iduser int primary key,usuario varchar(15) not null,fone varchar(15),login varchar(15) not null unique,senha varchar(250) not null,perfil varchar(20) not null);
