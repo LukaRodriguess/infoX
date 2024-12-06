@@ -25,10 +25,9 @@ O **Sistema OS** é uma aplicação desktop destinada à gestão de ordens de se
 ## Instalação
 
 ### Pré-requisitos:
-Ter o Java versão 8 instalado (só funciona corretamente nesta versão do Java).
-[download Java 8](https://www.java.com/en/download/)
-
-Ter um banco de dados local baseado no MySQL 8 , no exemplo usei o XAMPP que pode ser obtido no link indicado.[download xampp](https://sourceforge.net/projects/xampp/)
+TJava versão 8 instalado (só funciona corretamente nesta versão do Java).[download Java 8](https://www.java.com/en/download/)
+Ter um banco de dados local baseado no MySQL 8 [Aqui](https://dev.mysql.com/downloads/mysql/8.0.html)
+XAMPP que pode ser obtido no link indicado.[download xampp](https://sourceforge.net/projects/xampp/)
 
 ### Configuração do Banco de Dados:
 
