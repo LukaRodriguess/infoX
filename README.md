@@ -36,8 +36,12 @@ Ter um banco de dados local baseado no MySQL WorkBench 8 [Aqui](https://dev.mysq
    -Escolher a senha Admin@0099
     
    -Criar um Schema(Banco de dados) com o nome dbinfox
+   ```sql
+   CREATE DATABASE dbinfox;
+-
+    
 
-
+   
    -Na aba Query SQL, copie e cole o código abaixo e execute.
    ```sql
    create table tbusuarios(iduser int primary key,usuario varchar(15) not null,fone varchar(15),login varchar(15) not null unique,senha varchar(250) not null,perfil varchar(20) not null);
