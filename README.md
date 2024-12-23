@@ -38,7 +38,7 @@ Ter um banco de dados local baseado no MySQL WorkBench 8 [Aqui](https://dev.mysq
    -Criar um Schema(Banco de dados) com o nome dbinfox
    ```sql
    CREATE DATABASE dbinfox;
----
+-
 
    -Na aba Query SQL, copie e cole o código abaixo e execute.
    ```sql
